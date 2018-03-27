@@ -3,7 +3,7 @@ colours = {'rebeccapurple': '#663399', 'darkorange': '#ff8c00', 'cyan2': '#00eee
           'darkslateblue': '#483d8b', 'dodgerblue1': '#1e90ff', 'goldenrod': '#daa520',
           'lightslateblue': '#8470ff'}
 
-colour_name = input('Please enter the name of a colour: ')
+colour_name = input('Please enter the name of a colour: ').lower()
 
 while colour_name != '':
     if colour_name in colours:
