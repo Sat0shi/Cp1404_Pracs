@@ -5,7 +5,7 @@ class Guitar:
         self.cost = cost
 
     def __str__(self):
-        return"{} ({}), worth $ {:10,.2f} {}".format(self.name, self.year, self.cost, self.is_vintage())
+        return"{:>20} ({}), worth $ {:10,.2f} {}".format(self.name, self.year, self.cost, self.is_vintage())
 
     def get_age(self):
         return 2019 - self.year
@@ -15,3 +15,4 @@ class Guitar:
             return '(Vintage)'
         else:
             return ''
+        
