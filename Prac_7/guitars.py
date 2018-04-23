@@ -15,4 +15,3 @@ class Guitar:
             return '(Vintage)'
         else:
             return ''
-        

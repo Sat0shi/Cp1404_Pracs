@@ -8,8 +8,8 @@ while name != '':
 
     name = input("Name: ")
     if name != '':
-        year = input("Year: ")
-        cost = input("Cost: $")
+        year = int(input("Year: "))
+        cost = int(input("Cost: $"))
         my_guitars.append(Guitar(name, year, cost))
 
 for i in range(0,len(my_guitars)):
