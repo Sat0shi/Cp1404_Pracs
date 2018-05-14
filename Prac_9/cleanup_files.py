@@ -45,7 +45,6 @@ def main():
                 os.rename(filename, new_name)
 
 
-
 def get_fixed_filename(filename):
     """Return a 'fixed' version of filename."""
     # First, replace the spaces and .TXT (the easy part)
