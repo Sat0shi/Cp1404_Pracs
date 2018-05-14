@@ -42,7 +42,8 @@ def main():
             if not os.path.isdir(filename) and filename != '.DS_Store':
                 new_name = get_fixed_filename(filename)
                 print(new_name)
-                os.rename(filename, new_name)
+                shutil.move(dir_name + '\\' + filename, dir_name + '\\' + new_name)
+                #os.rename(dir_name + '\\' + filename, new_name)
 
 
 def get_fixed_filename(filename):
