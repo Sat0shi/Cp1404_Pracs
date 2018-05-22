@@ -12,6 +12,7 @@ def main():
     type_xlsx = input('What category would you like to sort xlsx files into?')
     type_jpg = input('What category would you like to sort jpg files into?')
     type_list = [type_doc, type_docx, type_png, type_gif, type_txt, type_xls, type_xlsx, type_jpg]
+
     for dir_name, subdir_list, file_list in os.walk('.'):
         for filename in file_list:
             if filename != '.DS_Store':
